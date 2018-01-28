@@ -1,7 +1,8 @@
 use_frameworks!
 
 target 'YBUtils_Example' do
-  pod 'YBUtils', :path => '../'
+    pod 'YBUtils', :path => '../'
+    #pod 'YBUtils', :git => 'https://github.com/panyibin/YBUtils.git'
 
   target 'YBUtils_Tests' do
     inherit! :search_paths
