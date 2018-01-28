@@ -7,6 +7,7 @@
 //
 
 #import "YBViewController.h"
+#import "TestViewController.h"
 
 @interface YBViewController ()
 
@@ -24,6 +25,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)clickButton:(id)sender {
+    TestViewController *vc = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

@@ -24,6 +24,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DF4804CB201D7FC400278E02 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4804C9201D7FC400278E02 /* TestViewController.m */; };
+		DF4804CC201D7FC400278E02 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4804CA201D7FC400278E02 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,8 @@
 		27F20CB0C34B3873EFDFF2C1 /* Pods-YBUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBUtils_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBUtils_Tests/Pods-YBUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2FB957F97CD107AC1A6E89C3 /* Pods-YBUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBUtils_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBUtils_Example/Pods-YBUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		37983AEDD8FDA68D841DF047 /* Pods_YBUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		479F003593E5C49E0E99D130 /* YBUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YBUtils.podspec; path = ../YBUtils.podspec; sourceTree = "<group>"; };
-		4F273C51AC5F1AD64C177726 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		479F003593E5C49E0E99D130 /* YBUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YBUtils.podspec; path = ../YBUtils.podspec; sourceTree = "<group>"; };
+		4F273C51AC5F1AD64C177726 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5BB4C439061B1A3E21E02CDA /* Pods-YBUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBUtils_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBUtils_Example/Pods-YBUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YBUtils_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBUtils_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +67,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9B08DBA41E1C202AE2B20DB /* Pods_YBUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC87C754E471BABC1408D93E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DC87C754E471BABC1408D93E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DF4804C8201D7FC400278E02 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		DF4804C9201D7FC400278E02 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		DF4804CA201D7FC400278E02 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		F6004ABC591F8AE040B5B739 /* Pods-YBUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBUtils_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBUtils_Tests/Pods-YBUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +153,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YBViewController.h */,
 				6003F5A6195388D20070C39A /* YBViewController.m */,
+				DF4804C8201D7FC400278E02 /* TestViewController.h */,
+				DF4804C9201D7FC400278E02 /* TestViewController.m */,
+				DF4804CA201D7FC400278E02 /* TestViewController.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -280,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				DF4804CC201D7FC400278E02 /* TestViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -405,6 +414,7 @@
 			files = (
 				6003F59E195388D20070C39A /* YBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YBViewController.m in Sources */,
+				DF4804CB201D7FC400278E02 /* TestViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
