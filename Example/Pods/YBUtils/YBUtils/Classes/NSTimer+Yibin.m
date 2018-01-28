@@ -8,7 +8,7 @@
 
 #import "NSTimer+Yibin.h"
 
-@implementation NSTimer (Yidian)
+@implementation NSTimer (Yibin)
 
 + (NSTimer *)yb_timerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(NSTimer *timer))block {
     
