@@ -11,6 +11,7 @@
 #endif
 
 #import "NSTimer+Yibin.h"
+#import "UIView+Yibin.h"
 
 FOUNDATION_EXPORT double YBUtilsVersionNumber;
 FOUNDATION_EXPORT const unsigned char YBUtilsVersionString[];

@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import <YBUtils/NSTimer+Yibin.h>
+#import <YBUtils/UIView+Yibin.h>
 
 @interface TestViewController ()
 {
@@ -25,6 +26,12 @@
         NSLog(@"timerEvent");
         [weakSelf timerHandler];
     }];
+    
+    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    view1.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view1];
+    
+    [view1 yb_addShadow];
 }
 
 - (void)didReceiveMemoryWarning {
