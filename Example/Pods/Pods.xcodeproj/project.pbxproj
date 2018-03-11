@@ -20,6 +20,8 @@
 		A96EA170D61DFBA672A8E6C7AE1E5794 /* Pods-YBUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8C3F085346DCDBA19A4A8554735568 /* Pods-YBUtils_Tests-dummy.m */; };
 		B4465251B78547E40C1F5384C4E1BED8 /* NSTimer+Yibin.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCBFAE4341C90221A25B5F2D92DA6E /* NSTimer+Yibin.m */; };
 		CCD725BFDF3DA222F401CC3BC2D4B958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DF34F6D2205528BC00CDE8CC /* NSDictionary+Yibin.m in Sources */ = {isa = PBXBuildFile; fileRef = DF34F6D0205528BC00CDE8CC /* NSDictionary+Yibin.m */; };
+		DF34F6D3205528BC00CDE8CC /* NSDictionary+Yibin.h in Headers */ = {isa = PBXBuildFile; fileRef = DF34F6D1205528BC00CDE8CC /* NSDictionary+Yibin.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,23 +51,25 @@
 		6CF13048FF3373040EFEF75B4250E534 /* NSTimer+Yibin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Yibin.h"; path = "YBUtils/Classes/NSTimer+Yibin.h"; sourceTree = "<group>"; };
 		74B7F8FECCDF92CDF29073318FF2E3BE /* UIView+Yibin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Yibin.h"; path = "YBUtils/Classes/UIView+Yibin.h"; sourceTree = "<group>"; };
 		763DC6C669BC2F6C4B1D6B0CA9CE330C /* Pods-YBUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YBUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
-		779B965B27C5E23CA8D7570A84D77704 /* Pods_YBUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YBUtils_Tests.framework; path = "Pods-YBUtils_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779B965B27C5E23CA8D7570A84D77704 /* Pods_YBUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA83C59CF6EE4524FFAE01495E8C1D3 /* Pods-YBUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YBUtils_Example-umbrella.h"; sourceTree = "<group>"; };
-		7EC05A5BF72CBF0CFA0CFA5CBA31BB28 /* Pods_YBUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YBUtils_Example.framework; path = "Pods-YBUtils_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC05A5BF72CBF0CFA0CFA5CBA31BB28 /* Pods_YBUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7FF8A09CBE5562E44C3B119B5F405E /* Pods-YBUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YBUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8112CA47276512B137998A546ABC5937 /* Pods-YBUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YBUtils_Example.modulemap"; sourceTree = "<group>"; };
+		8112CA47276512B137998A546ABC5937 /* Pods-YBUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YBUtils_Example.modulemap"; sourceTree = "<group>"; };
 		8CC46962DD943D97722B0087B918F846 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98001DCBBF5E3DDC163852F4F02CFE8C /* YBUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YBUtils.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98001DCBBF5E3DDC163852F4F02CFE8C /* YBUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YBUtils.modulemap; sourceTree = "<group>"; };
 		9B8C3F085346DCDBA19A4A8554735568 /* Pods-YBUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YBUtils_Tests-dummy.m"; sourceTree = "<group>"; };
-		A2C657C2DDFEF0572637CB81DB460A2B /* Pods-YBUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YBUtils_Tests.modulemap"; sourceTree = "<group>"; };
+		A2C657C2DDFEF0572637CB81DB460A2B /* Pods-YBUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YBUtils_Tests.modulemap"; sourceTree = "<group>"; };
 		A6E5722135BFEC3BEC3E762B3126D8E8 /* Pods-YBUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YBUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AC531B7E1BBD464D661C0EC2F1678735 /* YBUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YBUtils-prefix.pch"; sourceTree = "<group>"; };
 		AE7CA649607722DBDBCEAD8E4F409A0B /* Pods-YBUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YBUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AF4265C714C207055E364EF5233F3FE1 /* YBUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YBUtils.framework; path = YBUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4265C714C207055E364EF5233F3FE1 /* YBUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YBUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3AA23E244F4500D79F1DA296752C07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D08EB534B4A0F2B131A4D79C5AB1E51F /* Pods-YBUtils_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YBUtils_Example-resources.sh"; sourceTree = "<group>"; };
 		D228DB272D68728B08F59F4EA42359DB /* Pods-YBUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YBUtils_Example-dummy.m"; sourceTree = "<group>"; };
+		DF34F6D0205528BC00CDE8CC /* NSDictionary+Yibin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Yibin.m"; path = "YBUtils/Classes/NSDictionary+Yibin.m"; sourceTree = "<group>"; };
+		DF34F6D1205528BC00CDE8CC /* NSDictionary+Yibin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Yibin.h"; path = "YBUtils/Classes/NSDictionary+Yibin.h"; sourceTree = "<group>"; };
 		E99AAA886F36E186C58814C7FAB20AA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3DCBFAE4341C90221A25B5F2D92DA6E /* NSTimer+Yibin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Yibin.m"; path = "YBUtils/Classes/NSTimer+Yibin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +117,8 @@
 				F3DCBFAE4341C90221A25B5F2D92DA6E /* NSTimer+Yibin.m */,
 				74B7F8FECCDF92CDF29073318FF2E3BE /* UIView+Yibin.h */,
 				010EAC153F5CEF1B95F31639BF38D31C /* UIView+Yibin.m */,
+				DF34F6D1205528BC00CDE8CC /* NSDictionary+Yibin.h */,
+				DF34F6D0205528BC00CDE8CC /* NSDictionary+Yibin.m */,
 				81D1F02EE1E86540E160EF4E41FA2592 /* Support Files */,
 			);
 			name = YBUtils;
@@ -231,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DFF103A9DF108F067C90259B376DFCC /* Pods-YBUtils_Example-umbrella.h in Headers */,
+				DF34F6D3205528BC00CDE8CC /* NSDictionary+Yibin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF34F6D2205528BC00CDE8CC /* NSDictionary+Yibin.m in Sources */,
 				79F6DD27523BA5C9CB8C20CCCED9A04B /* Pods-YBUtils_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
