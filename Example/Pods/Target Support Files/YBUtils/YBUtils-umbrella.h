@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSDictionary+Yibin.h"
 #import "NSTimer+Yibin.h"
 #import "UIView+Yibin.h"
 

@@ -8,6 +8,7 @@
 
 #import "YBViewController.h"
 #import "TestViewController.h"
+#import <YBUtils/NSDictionary+Yibin.h>
 
 @interface YBViewController ()
 
