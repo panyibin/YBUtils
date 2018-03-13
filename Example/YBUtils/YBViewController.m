@@ -34,7 +34,11 @@
     NSDictionary *d = [dict getDictionaryForKey:@"num3"];
     BOOL bo = [dict getBoolForKey:@"num4"];
     
-    NSLog(@"finish");
+    NSLog(@"a:%ld", a);
+    NSLog(@"b:%@", b);
+    NSLog(@"array:%@", array);
+    NSLog(@"d:%@", d);
+    NSLog(@"bo:%d", bo);
 }
 
 - (void)didReceiveMemoryWarning
