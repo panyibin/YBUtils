@@ -27,7 +27,7 @@
     }
 }
 
-- (CGFloat)getFloatForKey:(NSString*)key {
+- (float)getFloatForKey:(NSString*)key {
     id ob = [self objectForKey:key];
     if(ob && [ob respondsToSelector:@selector(floatValue)]) {
         return [ob floatValue];
