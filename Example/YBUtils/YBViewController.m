@@ -28,18 +28,21 @@
     [dict setObject:@[@"a", @"b", @"c"] forKey:@"num2"];
     [dict setObject:@{@"name":@"hello"} forKey:@"num3"];
     [dict setObject:@(YES) forKey:@"num4"];
+    [dict setObject:@"12.1234" forKey:@"num5"];
     
     NSInteger a = [dict getIntegerForKey:@"num"];
     NSString *b = [dict getStringForKey:@"num1"];
     NSArray *array = [dict getArrayForKey:@"num2"];
     NSDictionary *d = [dict getDictionaryForKey:@"num3"];
     BOOL bo = [dict getBoolForKey:@"num4"];
+    CGFloat e = [dict getFloatForKey:@"num5"];
     
     NSLog(@"a:%ld", a);
     NSLog(@"b:%@", b);
     NSLog(@"array:%@", array);
     NSLog(@"d:%@", d);
     NSLog(@"bo:%d", bo);
+    NSLog(@"e:%f", e);
 }
 
 - (void)didReceiveMemoryWarning
