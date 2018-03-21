@@ -21,6 +21,8 @@
 		C053F948F003194195C77C8E2C9B7EEE /* NSTimer+Yibin.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E56FA138660560E65C2492A4E0F399 /* NSTimer+Yibin.m */; };
 		CCD725BFDF3DA222F401CC3BC2D4B958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CDD26B0644D13FE0DED8341B7C2E30EC /* UIView+Yibin.m in Sources */ = {isa = PBXBuildFile; fileRef = B851C4F8DCB52788EF78480F355B37B2 /* UIView+Yibin.m */; };
+		DFBD364D20617D6F00DBCB91 /* YBLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBD364B20617D6F00DBCB91 /* YBLoadingView.h */; };
+		DFBD364E20617D6F00DBCB91 /* YBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBD364C20617D6F00DBCB91 /* YBLoadingView.m */; };
 		E19FFE0DB26F90204FF2E9142931D876 /* YBUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CB1ABC5BA8743FDDB4A0ABBC87275AB /* YBUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		053DAB84D1E985BD466F05EFF2849BFF /* Pods-YBUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YBUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		08010DD1CB512A074246BB18C8CCE42B /* YBUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = YBUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		08010DD1CB512A074246BB18C8CCE42B /* YBUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = YBUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0CB1ABC5BA8743FDDB4A0ABBC87275AB /* YBUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YBUtils-umbrella.h"; sourceTree = "<group>"; };
 		15A3AB139262C2574DDF2FB6D1CD4C50 /* Pods-YBUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YBUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		173D4F32115A99482B04CEB24B20FD24 /* Pods-YBUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YBUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -53,17 +55,17 @@
 		6653C1C77672FED4A69554D497D57168 /* Pods-YBUtils_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YBUtils_Example-resources.sh"; sourceTree = "<group>"; };
 		7571F4633BB2085CF0D59B52F6B68168 /* Pods-YBUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YBUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		76B070B238E79AB611649A8648E6A7FC /* YBUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YBUtils-dummy.m"; sourceTree = "<group>"; };
-		779B965B27C5E23CA8D7570A84D77704 /* Pods_YBUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YBUtils_Tests.framework; path = "Pods-YBUtils_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EC05A5BF72CBF0CFA0CFA5CBA31BB28 /* Pods_YBUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YBUtils_Example.framework; path = "Pods-YBUtils_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779B965B27C5E23CA8D7570A84D77704 /* Pods_YBUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC05A5BF72CBF0CFA0CFA5CBA31BB28 /* Pods_YBUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A391A139291840ED2C8D50F8E2F236 /* Pods-YBUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YBUtils_Example-umbrella.h"; sourceTree = "<group>"; };
 		8A800A7907D903D7618C8CBD159923BE /* Pods-YBUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YBUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F024E99464D6FE8A7B6EE7430BEC931 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BB925D9F0B212AA7159B54389DABAD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8F024E99464D6FE8A7B6EE7430BEC931 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BB925D9F0B212AA7159B54389DABAD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D04150A8010D6F98E96C7A87F24BB18 /* YBUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YBUtils.modulemap; sourceTree = "<group>"; };
 		A2DCE25B9629F195E4DAF7E17F15B305 /* YBUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YBUtils-prefix.pch"; sourceTree = "<group>"; };
 		A6AEE984CAB5332AB50C20E13538E019 /* Pods-YBUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YBUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
-		AF4265C714C207055E364EF5233F3FE1 /* YBUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YBUtils.framework; path = YBUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4265C714C207055E364EF5233F3FE1 /* YBUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YBUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DD8A70DF05A3243B7578C2F5B5AD25 /* Pods-YBUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YBUtils_Tests-dummy.m"; sourceTree = "<group>"; };
 		B5AC4DA8380171A268660334EFEC3A8B /* NSTimer+Yibin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Yibin.h"; path = "YBUtils/Classes/NSTimer+Yibin.h"; sourceTree = "<group>"; };
 		B69C70A527F7E1D1519371F5C5423259 /* Pods-YBUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YBUtils_Example-dummy.m"; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		D179BFE8093981DF56735A2DEC84AA4C /* Pods-YBUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YBUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D99EDFBEB846012F3B6257F3817B8831 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4A8A10D56B7619DB26A145D6BF8DDF /* UIView+Yibin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Yibin.h"; path = "YBUtils/Classes/UIView+Yibin.h"; sourceTree = "<group>"; };
+		DFBD364B20617D6F00DBCB91 /* YBLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YBLoadingView.h; path = YBUtils/Classes/YBLoadingView.h; sourceTree = "<group>"; };
+		DFBD364C20617D6F00DBCB91 /* YBLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YBLoadingView.m; path = YBUtils/Classes/YBLoadingView.m; sourceTree = "<group>"; };
 		E058911B6357B818BDAC14C5968729B6 /* Pods-YBUtils_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YBUtils_Tests-resources.sh"; sourceTree = "<group>"; };
 		EF119FFA590FB25A5AF379BAA77DAAB7 /* Pods-YBUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YBUtils_Tests.modulemap"; sourceTree = "<group>"; };
 		F152694F06C7EED11339D65C32A19727 /* NSDictionary+Yibin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Yibin.h"; path = "YBUtils/Classes/NSDictionary+Yibin.h"; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				48E56FA138660560E65C2492A4E0F399 /* NSTimer+Yibin.m */,
 				DC4A8A10D56B7619DB26A145D6BF8DDF /* UIView+Yibin.h */,
 				B851C4F8DCB52788EF78480F355B37B2 /* UIView+Yibin.m */,
+				DFBD364B20617D6F00DBCB91 /* YBLoadingView.h */,
+				DFBD364C20617D6F00DBCB91 /* YBLoadingView.m */,
 				18EF6B7DFB8772BD27497C372FD049C4 /* Pod */,
 				61BDC24CC1B4325EEF6F7AC81C901D56 /* Support Files */,
 			);
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DFF103A9DF108F067C90259B376DFCC /* Pods-YBUtils_Example-umbrella.h in Headers */,
+				DFBD364D20617D6F00DBCB91 /* YBLoadingView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBD364E20617D6F00DBCB91 /* YBLoadingView.m in Sources */,
 				79F6DD27523BA5C9CB8C20CCCED9A04B /* Pods-YBUtils_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
