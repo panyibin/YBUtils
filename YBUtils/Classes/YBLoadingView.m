@@ -8,11 +8,9 @@
 #import "YBLoadingView.h"
 
 @interface YBLoadingView ()
-{
-    UIActivityIndicatorView *activityView;
-}
 
-@property (nonatomic, strong) UIWindow *overlayWindow;
+@property (nonatomic, strong) UIView *centerView; //animation background view
+@property (nonatomic, strong) UIActivityIndicatorView *activityView; //animation view
 
 @end
 
@@ -34,47 +32,58 @@
         // Initialization code
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.backgroundColor = [UIColor colorWithWhite: 0.8 alpha: 0.8];
-        
-        UIView* centerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 100, 100)];
-        centerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-        centerView.center = self.center;
-        centerView.backgroundColor = [UIColor colorWithRed:51.0f/255.0f green:51.0f/255.0f blue:51.0f/255.0f alpha:1.0];
-        centerView.layer.cornerRadius = 10;
-        [self addSubview: centerView];
-        
-        activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhiteLarge];
-        activityView.center = CGPointMake(50, 50);
-        activityView.color = [UIColor whiteColor];
-        activityView.hidesWhenStopped = YES;
-        [centerView addSubview: activityView];
-        
     }
     return self;
 }
 
-- (UIWindow *)overlayWindow {
-    if (!_overlayWindow) {
-        _overlayWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        _overlayWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        _overlayWindow.backgroundColor = [UIColor clearColor];
-        _overlayWindow.userInteractionEnabled = NO;
-        _overlayWindow.windowLevel = UIWindowLevelStatusBar;
+- (UIView *)centerView {
+    if (!_centerView) {
+        _centerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 100, 100)];
+        _centerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+        _centerView.center = self.center;
+        _centerView.backgroundColor = [UIColor colorWithRed:51.0f/255.0f green:51.0f/255.0f blue:51.0f/255.0f alpha:1.0];
+        _centerView.layer.cornerRadius = 10;
+        [self addSubview: _centerView];
     }
     
-    return _overlayWindow;
+    return _centerView;
 }
 
-- (void)show {
-    if (!self.superview) {
-        [self.overlayWindow addSubview:self];
+- (UIActivityIndicatorView *)activityView {
+    if (!_activityView) {
+        _activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhiteLarge];
+        _activityView.color = [UIColor whiteColor];
+        _activityView.hidesWhenStopped = YES;
+        [self.centerView addSubview: _activityView];
     }
     
-    [activityView startAnimating];
+    return _activityView;
+}
+
++ (void)showInView:(UIView *)view {
+    [[YBLoadingView sharedView] showInView:view];
+}
+
++ (void)dismiss {
+    [[YBLoadingView sharedView] dismiss];
+}
+
+- (void)showInView:(UIView*)view {
+    [view addSubview:self];
+    CGRect frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
+    self.frame = frame;
+    
+    self.centerView.center = self.center;
+    CGPoint activityViewCenter = [self convertPoint:self.center toView:self.centerView];
+    self.activityView.center = activityViewCenter;
+    
+    [self.activityView startAnimating];
     self.hidden = NO;
 }
 
-- (void)hide {
-    [activityView stopAnimating];
+- (void)dismiss {
+    [self removeFromSuperview];
+    [self.activityView stopAnimating];
     self.hidden = YES;
 }
 

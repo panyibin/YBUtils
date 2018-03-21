@@ -45,6 +45,14 @@
                                     <action selector="clickButton:" destination="whP-gf-Uak" eventType="touchUpInside" id="8mU-Ul-s0s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-yS-bbj">
+                                <rect key="frame" x="99" y="532" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show loading"/>
+                                <connections>
+                                    <action selector="clickShowLoading:" destination="whP-gf-Uak" eventType="touchUpInside" id="Egt-Vi-RaE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -52,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="349"/>
+            <point key="canvasLocation" x="-415.19999999999999" y="348.57571214392806"/>
         </scene>
     </scenes>
 </document>

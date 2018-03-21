@@ -9,6 +9,7 @@
 
 @interface YBLoadingView : UIView
 
-
++ (void)showInView:(UIView*)view;
++ (void)dismiss;
 
 @end

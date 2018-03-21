@@ -9,6 +9,7 @@
 #import "YBViewController.h"
 #import "TestViewController.h"
 #import <YBUtils/NSDictionary+Yibin.h>
+#import <YBUtils/YBLoadingView.h>
 
 @interface YBViewController ()
 
@@ -50,6 +51,14 @@
 - (IBAction)clickButton:(id)sender {
     TestViewController *vc = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickShowLoading:(id)sender {
+    [YBLoadingView showInView:self.view];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [YBLoadingView dismiss];
+    });
 }
 
 @end
